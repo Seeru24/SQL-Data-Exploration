@@ -21,7 +21,7 @@ WHERE continent IS NOT NULL
 ORDER BY 1,2
 
 --Looking at total cases vs total deaths
---Shows Likelyhood of dying if you contract covid in your country
+--Shows Likelihood of dying if you contract covid in your country
 
 SELECT location,date, total_cases, new_cases, total_deaths, (total_deaths/total_cases)*100 AS deathPer
 FROM covidDeaths
